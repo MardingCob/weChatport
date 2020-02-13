@@ -1,0 +1,37 @@
+<!--pages/main/reserve/addpeople/index.wxml-->
+<view class='container'>
+  <view class='content'>
+
+    <view class='content-row' wx:for='{{array}}' wx:key='{{index}}'>
+
+      <view class='input-row-detail' data-index='{{index}}'>
+        <text class='title'>姓名</text>
+        <input bindinput='nameInput' data-index='{{index}}' value='{{name}}' placeholder='请输入姓名'></input>
+      </view>
+
+      <view class='input-row-detail' data-index='{{index}}'>
+        <text class='title'>手机号</text>
+        <input bindinput='telephoneInput' data-index='{{index}}' value='{{telephone}}' placeholder='请输入手机号'></input>
+      </view>
+
+      <view class='input-row-detail' data-index='{{index}}'>
+        <text class='title'>身份证号</text>
+        <input bindinput='IDcardInput' data-index='{{index}}' value='{{IDcard}}' placeholder='请输入身份证号'></input>
+      </view>
+
+      <!--上传随行人照片-->
+      <view class='input-row-detail' data-index='{{index}}'>
+
+        <text bindtap='upload' data-index="{{index}}">上传人脸照片</text>
+        <image class='photo' src='{{}}'></image>
+
+          
+      </view>
+
+    </view>
+
+    <view class='content-row'>
+      <text class='btn' bindtap='complete'>完成</text>
+    </view>
+  </view>
+</view>

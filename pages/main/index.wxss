@@ -1,0 +1,11 @@
+/* pages/main/index.wxss */
+.bt{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.input-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}

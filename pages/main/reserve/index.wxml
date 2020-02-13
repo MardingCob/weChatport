@@ -1,0 +1,28 @@
+<!--pages/main/reserve/index.wxml-->
+<view class='container'>
+  <view class='content'>
+    <view class='title'>
+    {{hotel_name}}
+      {{room_type}}{{date}}
+    </view>
+
+    <view class='input-row'>办理人姓名<input class='input-row-info' value='{{name}}' bindinput='nameInput'></input></view>
+
+    <view class='input-row'>联系手机<input class='input-row-info' value='{{telephone}}' bindinput='telephoneInput'></input></view>
+
+    <view class='input-row'>身份证号<input class='input-row-info' value='{{IDcard}}' bindinput='IDcardInput'></input></view>
+
+    <view class='input-row'>入住人数<input class='input-row-info' value='{{group_number}}' bindinput='numberInput'></input></view>
+
+    <view class='input-row' bindtap='upload'>上传人脸照片
+      <image class='photo' src='{{image}}'></image>
+    </view>
+  </view>
+
+  <view class='input-row' wx:if='{{group_number > 1}}'><text bindtap='addPeople'>添加随行人信息</text></view>
+
+  <view class='input-row'>
+    <text class='' bindtap='reserve'>预定</text>
+  </view>
+</view>
+

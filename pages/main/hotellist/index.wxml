@@ -1,0 +1,9 @@
+<!--pages/main/hotellist/index.wxml-->
+
+<view class='content'>
+  <view wx:for='{{hotel_list}}' wx:key='{{index}}'>
+    <view bindtap='hotelChoice' data-index='{{index}}'>
+      {{item.hotel_name}}
+    </view>
+  </view>
+</view> 

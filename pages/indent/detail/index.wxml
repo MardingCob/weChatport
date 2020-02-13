@@ -1,0 +1,7 @@
+<!--pages/indent/detail/index.wxml-->
+<view class='container'>
+  <view class='content'>
+    <text>显示detail</text>
+    <text>酒店名称{{indent_list.hotel_name}}</text>
+  </view>
+</view>

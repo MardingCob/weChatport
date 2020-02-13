@@ -1,0 +1,51 @@
+{
+  "pages": [
+    
+    "pages/login/index",
+    "pages/main/index",
+    "pages/register/index",
+    "pages/reset/index",
+    "pages/set/setpwd/index",
+    "pages/set/index",
+    "pages/main/hotellist/index",
+    "pages/main/calendar/index",
+    "pages/main/reserve/index",
+    "pages/main/reserve/addpeople/index",
+    "pages/indent/index",
+    "pages/indent/detail/index",
+    "pages/testuploadphoto/index"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/main/index",
+        "text": "主页",
+        "iconPath": "",
+        "selectedIconPath": ""
+      },
+      {
+        "pagePath": "pages/indent/index",
+        "text": "订单",
+        "iconPath": "",
+        "selectedIconPath": ""
+      },
+      {
+        "pagePath": "pages/set/index",
+        "text": "设置",
+        "iconPath": "",
+        "selectedIconPath": ""
+      }
+    ]
+  },
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "sitemapLocation": "sitemap.json"
+}

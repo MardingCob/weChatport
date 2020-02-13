@@ -1,0 +1,21 @@
+<!--pages/indent/index.wxml-->
+<view class='container'>
+  <view class='content'>
+
+    <view class='input-row'>
+      <text class='input-row-title'>请输入身份证号查询</text>
+      <input class='input-row-content' value='{{IDcard}}' bindinput='IDcardInput' placeholder='{{IDcard}}'></input>
+      <button bindtap='search'>查询</button>
+    </view>
+
+    <view wx:for='{{indent_list}}' wx:key='{{index}}'>
+      <view id='general'>
+        <card title="{{item.checkin_time}}" bindtap='showDetail' data-index="{{index}}">
+          <view slot='body'>姓名:{{item.name}}</view>
+          <view slot='footer'>入住的酒店:{{hotel_name}}</view>
+          <view slot='footer'wx:if='{{item.check_out == 0}}'>进行中</view>
+        </card>
+      </view>
+    </view>
+  </view>
+</view>

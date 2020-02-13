@@ -1,0 +1,22 @@
+<!--pages/login/index.wxml-->
+<view class="content">
+		<view class="input-group">
+			<view class="input-row border">
+				<text class="title">账号：</text>
+				<input class="m-input" type="text" clearable focus value='{{account}}' placeholder="请输入账号" bindinput='inputAccount'></input>
+			</view>
+			<view class="input-row">
+				<text class="title">密码：</text>
+				<input type="password" displayable value='{{password}}' placeholder="请输入密码" bindinput='inputPassword'></input>
+			</view>
+		</view>
+		<view class="btn-row">
+			<button type="primary" class="primary" bindtap="bindLogin">登录</button>
+		</view>
+		<view class="action-row">
+			<navigator url="../register/index">注册账号</navigator>
+			<text>|</text>
+			<navigator url="../reset/index">忘记密码</navigator>
+		</view>
+
+	</view>

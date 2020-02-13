@@ -1,0 +1,29 @@
+<!--pages/main/index.wxml-->
+<view class='container'>
+  <!--酒店选择-->
+  <view class='content'>
+    <view class='choice-row'>
+      <text class='hotel_choice' bindtap='hotelChoice'>{{hotel}}</text>
+    </view>
+  </view>
+  <view class='calender'>
+    <text bindtap='dateChoice'>{{date}}</text>
+  </view>
+  <view class='bt'>
+    <button class='all' bindtap='all'>全部</button>
+    <button class='double' bindtap='double'>大床房</button>
+    <button class='common' bindtap='common'>普通房</button>
+    <button class='president' bindtap='president'>总统套房</button>
+    <button class='lovers' bindtap='lovers'>情侣套房</button>
+  </view>
+  <!--类型预约-->
+  <view class='content'>
+    <view class='input-row' wx:for='{{room_info}}' wx:key='{{index}}'>
+      <view class='room_type' bindtap='room_type' data-index='{{index}}'>
+        {{item.room_type}}
+        <text bindtap='reserve' data-index='{{index}}'>预约</text>
+      </view>
+      
+    </view>
+  </view> 
+</view>

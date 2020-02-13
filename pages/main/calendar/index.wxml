@@ -1,0 +1,2 @@
+<!--pages/main/calender/index.wxml-->
+<calendar  bind:onOkSelected="onOkSelected"/> 

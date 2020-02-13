@@ -1,0 +1,44 @@
+<!--pages/register/index.wxml-->
+<view class="content">
+		<view class="input-group">
+
+			<view class="input-row border">
+				<text class="title">用户名:</text>
+				<input type="text" clearable value="{{username}}" bindinput='inputUsername' placeholder="请输入用户名" />
+			</view>
+
+			<view class="input-row border">
+				<text class="title">姓名：</text>
+				<input type="text" clearable value="{{name}}" bindinput='inputName' placeholder="请输入姓名"></input>
+			</view>
+
+			<view class="input-row border">
+				<text class="title">身份证：</text>
+				<input type="number" clearable value="{{IDcard}}" bindinput='inputNumber' placeholder="请输入身份证"></input>
+			</view>
+
+			<view class="input-row border">
+				<text class="title">密码：</text>
+				<input type="password" displayable value="{{password}}" bindinput='inputPassword' placeholder="最短6个字符"></input>
+			</view>
+
+			<view class="input-row border">
+				<text class="title">确认密码：</text>
+				<input type="password" displayable value="{{check_password}}" bindinput='inputCheckPassword' placeholder="确认密码" />
+			</view>
+
+			<view class="input-row">
+				<text class="title">邮箱：</text>
+				<input type="text" clearable value="{{email}}" bindinput='inputEmail' placeholder="请输入邮箱"></input>
+			</view>
+
+			<view class="input-row">
+				<text class="title">联系方式：</text>
+				<input type="text" clearable value="{{telephone}}" bindinput='inputTelephone' placeholder="请输入手机号"></input>
+			</view>
+		</view>
+
+		<view class="btn-row">
+			<button type="primary" class="primary" bindtap="register">注册</button>
+		</view>
+	</view>
