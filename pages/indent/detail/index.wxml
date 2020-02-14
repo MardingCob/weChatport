@@ -4,4 +4,8 @@
     <text>显示detail</text>
     <text>酒店名称{{indent_list.hotel_name}}</text>
   </view>
+
+  <view>
+    <button bindtap='checkOut'>退房</button>
+  </view>
 </view>

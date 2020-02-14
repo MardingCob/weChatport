@@ -9,6 +9,43 @@ Page({
     indent_list:[]
   },
 
+  // 退房
+  checkOut:function(){
+    var that = this;
+    wx.request({
+      url: app.globalData.apiUrl + '/CheckOutRoom',
+      method: "POST",
+
+      data: {
+        check_id:that.data.indent_list.check_id
+      },
+
+      header: { 'Content-Type': 'application/json' },
+
+      success:function(res){
+
+        // 退房的return
+        console.log('退房的return',res.data)
+
+        if(res.data.result == 'success'){
+          wx.showToast({
+            title: '退房成功',
+
+            duration:2000,
+            success:function(){
+              var timeout = setTimeout(function(){
+                wx.switchTab({
+                  url: '/pages/main/index',
+                })
+              },2000)
+              
+            }
+          })
+        }
+      }
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
