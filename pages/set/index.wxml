@@ -1,2 +1,13 @@
 <!--pages/set/index.wxml-->
-<text>pages/set/index.wxml</text>
+<view id='body'>
+<view class='list'>
+  <view class='image'>
+    <image id='leftImage' src='../../images/password.jpeg'></image>
+  </view>
+
+  <view class='content'>
+    <text class='detail' bindtap='ChangePassword'>修改密码</text>
+  </view>
+
+</view>
+</view>

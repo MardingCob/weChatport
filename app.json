@@ -12,8 +12,7 @@
     "pages/main/reserve/index",
     "pages/main/reserve/addpeople/index",
     "pages/indent/index",
-    "pages/indent/detail/index",
-    "pages/testuploadphoto/index"
+    "pages/indent/detail/index"
     
   ],
   "window": {

@@ -1,2 +1,27 @@
 <!--pages/set/setpwd/index.wxml-->
-<text>pages/set/setpwd/index.wxml</text>
+<view class="content">
+		<view class="input-group">
+			
+			<view class="input-row border">
+				<text class="title">身份证号:</text>
+				<input type="number" clearable value="{{IDcard}}" bindinput='inputIDcard' placeholder="请输入身份证号"/>
+			</view>
+			
+			<view class="input-row border">
+				<text class="title">新密码:</text>
+				<input type="password" displayable  value="{{password}}" bindinput='inputPassword' placeholder="请输入新密码"/>
+			</view>
+			
+			<view class="input-row border">
+				<text class="title">确认密码:</text>
+				<input type="password" displayable value="{{check_password}}" bindinput='inputCheckPassword' placeholder="确认密码" />
+			</view>
+			
+			<view class="btn-row">
+				<button type="primary" class="primary" bindtap="reset">修改</button>
+			</view>
+			
+			
+		</view>
+	</view>
+

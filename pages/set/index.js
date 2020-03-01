@@ -8,6 +8,14 @@ Page({
 
   },
 
+  // 修改密码
+
+  ChangePassword:function(){
+    wx.navigateTo({
+      url: 'setpwd/index'
+    })
+  },
+  
   /**
    * 生命周期函数--监听页面加载
    */

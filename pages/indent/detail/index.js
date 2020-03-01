@@ -30,7 +30,6 @@ Page({
         if(res.data.result == 'success'){
           wx.showToast({
             title: '退房成功',
-
             duration:2000,
             success:function(){
               var timeout = setTimeout(function(){
