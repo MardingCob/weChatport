@@ -15,7 +15,8 @@ Page({
     group_number:1,
     IDcard:'',
     check_id:'',
-    boolean : false
+    boolean : false,
+    p_id:[]
 
   },
 
@@ -128,12 +129,17 @@ Page({
   // 预定
   reserve:function(){
     var that = this;
-    var p_id = wx.getStorageSync('p_id')
+
+    if(that.data.group_num != 1){
+      that.p_id = wx.getStorageSync('p_id')
+    }
+    
+
     wx.request({
       url: app.globalData.apiUrl + '/allCheckIn',
       method:'POST',
       data:{
-        p_id:p_id,
+        p_id:that.data.p_id,
         hotel_id:that.data.room_info.hotel_id,
         room_id: that.data.room_info.room_id,
         group_num:that.data.group_number,

@@ -122,7 +122,7 @@ Page({
   onLoad: function (options) {
     var that = this;
     var list = [];
-   
+
     wx.request({
       url: app.globalData.apiUrl + '/GetHotel' ,
       method:'POST',
@@ -159,6 +159,8 @@ Page({
       hotel:app.globalData.hotel_name,
       date:app.globalData.date
     })
+
+    this.all()
   },
 
   /**
